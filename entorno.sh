@@ -10,4 +10,4 @@ else
   URL=$URLJDK64
 fi
 /usr/bin/wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" $URL -O JDK.tar.gz
-/bin/tar -xvzf ./JDK.tar.gz /usr/lib/jvm
+/bin/tar -xvzf ./JDK.tar.gz
