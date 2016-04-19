@@ -1,5 +1,6 @@
+#!/bin/bash
 #$JDKURL =
 
 echo "Descargando JAVA";
-$arq = uname -m;
+arq = 'uname -m';
 echo $arq;
