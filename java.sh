@@ -2,6 +2,7 @@
 #URLS JDKURL
 URLJDK32="http://download.oracle.com/otn-pub/java/jdk/8u77-b03/jdk-8u77-linux-i586.tar.gz"
 URLJDK64="http://download.oracle.com/otn-pub/java/jdk/8u77-b03/jdk-8u77-linux-x64.tar.gz"
+URLSCALA="http://downloads.lightbend.com/scala/2.11.8/scala-2.11.8.tgz"
 CARPETAO="jdk1.8.0_77"
 CARPETAD="jdk8"
 echo "Descargando JAVA"
@@ -24,4 +25,7 @@ echo export J2REDIR=$JVMHOME/jre >> $HOME/.bashrc
 echo export PATH=$PATH:$JVMHOME/bin:$JVMHOME/db/bin:$JVMHOME/jre/bin >> $HOME/.bashrc
 echo export JAVA_HOME=$JVMHOME >> $HOME/.bashrc
 echo export DERBY_HOME=$JVMHOME/db >> $HOME/.bashrc
-echo "Terminado"
+echo "Terminado JAVA"
+echo "Descargando SCALA"
+/usr/bin/wget $SCALA -O scala.tgz
+/bin/tar -xzf ./scala.tgz
