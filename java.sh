@@ -19,9 +19,9 @@ cd ./$CARPETAD
 CURRDIR=$(pwd);
 cd ..
 sudo mv $CURRDIR $JVMHOME
-echo 'export J2SDKDIR=$JVMHOME' >> $HOME/.bashrc
-echo 'export J2REDIR=$JVMHOME/jre' >> $HOME/.bashrc
-echo 'export PATH=$PATH:$JVMHOME/bin:$JVMHOME/db/bin:$JVMHOME/jre/bin'>> $HOME/.bashrc
-echo 'export JAVA_HOME=$JVMHOME' >> $HOME/.bashrc
-echo 'export DERBY_HOME=$JVMHOME/db' >> $HOME/.bashrc
+echo export J2SDKDIR=$JVMHOME >> $HOME/.bashrc
+echo export J2REDIR=$JVMHOME/jre >> $HOME/.bashrc
+echo export PATH=$PATH:$JVMHOME/bin:$JVMHOME/db/bin:$JVMHOME/jre/bin >> $HOME/.bashrc
+echo export JAVA_HOME=$JVMHOME >> $HOME/.bashrc
+echo export DERBY_HOME=$JVMHOME/db >> $HOME/.bashrc
 echo "Terminado"
