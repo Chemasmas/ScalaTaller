@@ -40,10 +40,10 @@ cd ..
 sudo mv $CURRDIR $SCALAHOME
 echo "Terminado SCALA"
 /usr/bin/wget $URLSBT
-chmode 722 ./sbt-launch.jar
+/bin/chmod 722 ./sbt-launch.jar
 mkdir $SBTHOME
 mv ./sbt-launch.jar $SBTHOME
-chmode 722 ./sbt
+/bin/chmod 722 ./sbt
 mv ./sbt $SBTHOME
 #Edicion del PATH
 echo export PATH=$PATH:$JVMHOME/bin:$JVMHOME/db/bin:$JVMHOME/jre/bin:$SCALAHOME/bin:$SBTHOME >> $HOME/.bashrc
