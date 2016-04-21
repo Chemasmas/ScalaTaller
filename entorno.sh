@@ -11,7 +11,7 @@ CARPETADS="scala"
 echo "Descargando JAVA"
 JVMHOME=/usr/lib/$CARPETAD
 SCALAHOME=/usr/local/share/$CARPETADS
-SBTHOME=/usr/lib/sbt
+SBTHOME=/usr/lib/simplebuildtool
 arq=$(/bin/uname -m)
 if [ $arq == "i686" ]; then
   URL=$URLJDK32
@@ -39,7 +39,8 @@ CURRDIR=$(pwd);
 cd ..
 sudo mv $CURRDIR $SCALAHOME
 echo "Terminado SCALA"
-/usr/bin/wget $URLSBT
+echo "Iniciando SBT"
+/usr/bin/wget $URLSBT -O sbt-launch.jar
 /bin/chmod 722 ./sbt-launch.jar
 mkdir $SBTHOME
 mv ./sbt-launch.jar $SBTHOME
