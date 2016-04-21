@@ -41,10 +41,10 @@ sudo mv $CURRDIR $SCALAHOME
 echo "Terminado SCALA"
 echo "Iniciando SBT"
 /usr/bin/wget $URLSBT -O sbt-launch.jar
-/bin/chmod 722 ./sbt-launch.jar
+/bin/chmod 777 ./sbt-launch.jar
 mkdir $SBTHOME
 mv ./sbt-launch.jar $SBTHOME
-/bin/chmod 722 ./sbt
+/bin/chmod 777 ./sbt
 mv ./sbt $SBTHOME
 #Edicion del PATH
 echo export PATH=$PATH:$JVMHOME/bin:$JVMHOME/db/bin:$JVMHOME/jre/bin:$SCALAHOME/bin:$SBTHOME >> $HOME/.bashrc
